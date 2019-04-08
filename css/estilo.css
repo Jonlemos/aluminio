@@ -1,0 +1,234 @@
+/* não pading com altura e largura*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    background-color: #f0c4b6
+}
+.logo {
+    display: block;
+    
+    padding-top:4px;
+
+
+}
+
+.logo h1 {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: -5px;
+    font-family: georgia solf;
+    padding-bottom: 1px;
+    color: #ffffff
+}
+.logo h2 {
+
+    font-size: 18px;
+    font-family: georgia net;
+    color: #ffffff;
+    margin-top: 0px
+
+
+}
+.a_maior {
+    font-size: 36px;
+}
+
+.contato {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+  height: 55px;
+  margin:0 auto;
+    }
+
+.contato p {
+  margin-right: 150px;
+  font-size: 20px;
+  color:#000;
+  padding-left: 15px;
+  font-family: 'Montserrat:900';
+  box-sizing: border-box;
+  margin: 15px auto;
+  
+  }
+
+.intro {
+    
+  background-image: url(../imagens/menu_aluminio.jpg);
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 100;
+}
+
+.container {
+  width: 960px;
+  margin:0 auto;
+  padding: 0;
+}
+
+.logo img {
+  height: 85px;
+  margin: 0 auto;
+}
+
+.menu{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  padding-top: 35px;
+    
+}
+
+.menu ol {
+
+  margin:0;
+  padding: 0;
+
+}
+
+.fist_link {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  transition: all 0.2s; /*all para color só muda a cor*/
+  margin-bottom: 1px;
+    
+}
+
+.menu li {
+margin-left: 20px;
+border-right: 1px solid;
+padding-right: 15px;
+border-color: white; 
+text-shadow: #000000 solid 2px;
+}
+
+menu p {
+  text-transform: none;
+}
+
+.navegacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;   
+}
+
+.menu .fist_link:hover{
+  color:#dd0500;
+  border-bottom: 2px solid #dd0500;
+}
+
+.menu .fist_link:hover::after, .menu a:hover::before{
+  width: 100%;
+    
+}
+
+.border_nav{
+  background-color: #7c9c37;
+  display: flex;
+  padding: 1px;
+}
+
+.slider-produtos {
+  display: flex;
+  margin: -95px auto;
+  justify-content: space-between;
+}
+
+.secao1{
+  height: 780px;
+}
+
+.secao1 img{
+
+  height: 460px;
+}
+
+.secao2 img{
+  height: 315px;
+}
+
+.caixa-produtos {
+  background-color: #7c9c37;
+  height: 140px;
+}
+
+.secao3
+{
+  height: 780px;
+  
+}
+.redesocial {
+  display: block;
+  margin-top: 6;
+}
+.redesocial h2{
+  margin: 0;
+}
+.redesocial img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  height: 85px;
+  margin-top: 45px;
+}
+
+.rodape {
+
+  background-color: #922884;
+  min-height: 300px;
+}
+
+.menu-final {
+display: flex;
+justify-content: space-between;
+padding-top: 25px;
+}
+
+.coluna-contato {
+  width: 33%;
+}
+
+.coluna-contato img {
+
+  height: 60px;
+}
+
+.coluna-sobre {
+  width: 33%;
+  margin-left: 20px;
+}
+
+.coluna-sobre p{
+
+  width: 80%
+
+}
+
+.coluna-loja {
+  width: 33%;
+}
+.coluna-loja img{
+  height: 60px;
+}
+
+.menu-final i{
+  font-size: 60px;
+}
+
+
+
+
+
+
+
+@media (max-width:0px) {
+
+}
