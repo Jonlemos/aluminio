@@ -1,54 +1,37 @@
 /* não pading com altura e largura*/
 *{
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 body{
-    margin: 0px;
-    background-color: #f0c4b6
+  margin: 0px;
+  background-color: #f0c4b6
 }
 .logo {
-    display: block;
-    
-    padding-top:4px;
-
+  display: block;
+  padding-top:4px;
 
 }
 
 .logo h1 {
-    font-size: 25px;
-    text-transform: uppercase;
-    margin-bottom: -5px;
-    font-family: georgia solf;
-    padding-bottom: 1px;
-    color: #ffffff
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-bottom: -5px;
+  font-family: georgia solf;
+  padding-bottom: 1px;
+  color: #ffffff
 }
-.logo h2 {
-
-    font-size: 18px;
-    font-family: georgia net;
-    color: #ffffff;
-    margin-top: 0px
-
-
-}
-.a_maior {
-    font-size: 36px;
-}
-
 .contato {
   display: flex;
   justify-content: space-between;
   width: 960px;
   height: 55px;
   margin:0 auto;
-    }
+}
 
 .contato p {
-  margin-right: 150px;
-  font-size: 20px;
+  font-size: 19px;
   color:#000;
-  padding-left: 15px;
-  font-family: 'Montserrat:900';
+  font-family: 'Montserrat';
   box-sizing: border-box;
   margin: 15px auto;
   
@@ -103,11 +86,13 @@ body{
 }
 
 .menu li {
-margin-left: 20px;
-border-right: 1px solid;
-padding-right: 15px;
-border-color: white; 
-text-shadow: #000000 solid 2px;
+  margin-left: 20px;
+  border-right: 1px solid;
+  padding-right: 15px;
+  border-color: white; 
+  text-shadow: #000000 1px 1px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 
 menu p {
@@ -138,36 +123,106 @@ menu p {
 
 .slider-produtos {
   display: flex;
-  margin: -95px auto;
+  margin-top: -95px;
   justify-content: space-between;
 }
 
+.dividirsecao {
+  padding-bottom: 15px;
+}
+
 .secao1{
-  height: 780px;
+  height: 100%;
+  position: relative;
+  
+}
+
+.overlay {  
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0, 140, 186, 0.6);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.overlay2 {  
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0, 140, 186, 0.6 );
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  margin-bottom: 15px;
+}
+
+.secao1:hover .overlay {
+  height: 100%;
 }
 
 .secao1 img{
+  height: 445px;
 
-  height: 460px;
 }
 
+.dividirsecao {
+  
+  position: relative;
+}
+.dividirsecao:hover .overlay2 {
+  height: 95%;
+}
+
+
 .secao2 img{
-  height: 315px;
+  height: 290px;
+}
+.text {
+  white-space: nowrap; 
+  color: rgb(4, 41, 9);
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 .caixa-produtos {
-  background-color: #7c9c37;
+  background-image: url(../imagens/Aluminio1.png);
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 140px;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.caixa-produtos button {
+  
+  line-height: 127px;
+  vertical-align:middle;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  color: #d1d1d0 ;
+  text-shadow: #030301 1px 2px;
+  font-size: 25px;
 }
 
 .secao3
 {
-  height: 780px;
+  height: 100%;
   
 }
 .redesocial {
   display: block;
-  margin-top: 6;
+  
 }
 .redesocial h2{
   margin: 0;
@@ -179,10 +234,21 @@ menu p {
   height: 85px;
   margin-top: 45px;
 }
+.divisao {
+  margin-top: 20px;
+  height: 2px;
+  background-color:#7c9c37
+}
+
+.dividirsecoes{
+
+  padding-bottom: 90px;
+  padding-top: 75px;
+}
 
 .rodape {
 
-  background-color: #922884;
+  background-color: #b8d2fd;
   min-height: 300px;
 }
 
@@ -201,9 +267,13 @@ padding-top: 25px;
   height: 60px;
 }
 
+.atendimento {
+  margin: 0 auto;
+}
+
 .coluna-sobre {
   width: 33%;
-  margin-left: 20px;
+  margin-left: 60px;
 }
 
 .coluna-sobre p{
@@ -225,10 +295,79 @@ padding-top: 25px;
 
 
 
+.formulario {
+  width: 770px;
+  margin-bottom: 60px;
+
+}
+
+.linha_campos {
+  display: flex;
+  justify-content: space-between
+}
+
+.rotulo {
+  color:#999;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 20px
+}
+.linha_campos {
+  display: block;
+}
+.linha_campos .rotulo {
+  width: 370px;
+}
+
+.observacao {
+  color: #c74e2d;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.campo {
+  border: 0;
+  background-color: #ddd;
+  display: block;
+  width: 100%;
+  height: 35px;
+  font-size: 16px;
+  color: #665;
+  padding-left: 15px;
+  font-family: inherit;
+}
+
+textarea.campo {
+  height: 290px;
+  resize: none;
+  padding: 15px
+}
+.nav-produtos {
+  margin-bottom: 35px;
+}
+
+.card-link {
+  padding-bottom: 0%
+}
 
 
 
 
-@media (max-width:0px) {
+@media (max-width:959px){
+
+  .container{
+    width: 768px;
+
+
+  }
+
+
+}
+
+
+@media (max-width:767px) {
+  .container {
+    width: 319px;
+  }
 
 }

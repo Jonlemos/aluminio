@@ -6,12 +6,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!--responsivo-->
         <link rel="stylesheet" href="plugins/caroulsel-css/plugin.css">
-        <link rel="stylesheet" href="css/estilo.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="stylesheet" href="plugins/node_modules/bootstrap/compiler/estilo.css">
         <link rel="stylesheet" href="plugins/node_modules/bootstrap/compiler/bootstrap.css">
+        <link rel="stylesheet" href="plugins/9bitStudios-flexisel-f86b2ef/css/style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <script type="text/javascript" src="plugins/9bitStudios-flexisel-f86b2ef/js/jquery.flexisel.js"></script>
+        <link rel="stylesheet" href="css/estilo.css">
     </head>
     <body>
         <script src="plugins/node_modules/popper.js/dist/umd/popper.js"></script>
@@ -19,8 +21,8 @@
         <script src="plugins/node_modules/bootstrap/dist/js/bootstrap.js"></script>
         <div class="container">
             <header class="contato">
-               <p>Contato: (11)-99999-99999</p>
-               <p>E-mail: Lemos.anjos@gmail.com</p>
+                <p>Contato: (11)-2292-3540</p>
+                <p>E-mail: Faturamento@aluminiobrilhante.com.br</p>
             </header>
         </div>       
             
@@ -36,13 +38,12 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="menu navbar-nav justify-content-end">
                             <li class="nav-item "><a class="fist_link nav-link" href="#">Home</a>
-                            
                                 
                             </li>
-                            <li class="nav-item "><a class="fist_link nav-link" href="#">Produtos</a>
+                            <li class="nav-item "><a class="fist_link nav-link" href="produtos.html">Produtos</a>
                                 
                             </li>
-                            <li class="nav-item"><a class="fist_link nav-link" href="#">Contato</a>
+                            <li class="nav-item"><a class="fist_link nav-link" href="contato.html">Contato</a>
                                 
                             
                             </li>
@@ -64,34 +65,73 @@
         </section>
 
         <div class="container">
-            <section class="slider-produtos row">
+                
+            <section class="slider-produtos">
+                
                 <div class="secao1">
-                    <div>
-                    <a href="paginas/Produtos.html"> <img src="imagens/section2.jpg"></a>  
-                    </div>
+                    <a href="produtos.html"> 
+                        <img class="rounded" src="imagens/section2.jpg">
+                        <div class="overlay">
+                            <div class="text">Produtos para sua cozinha</div>
+                        </div>
+                    </a>  
                 </div>
 
                 <div class="secao2">
-                    <div>
-                        <a href="paginas/Produtos.html" > <img src="imagens/section1.jpg" alt="Aluminio Brilhante"></a>  
+                    <div class="dividirsecao">
+                        <a href="produtos.html" > 
+                            <img class="rounded" src="imagens/section1.jpg" alt="Aluminio Brilhante">
+                            <div class="overlay2">
+                                    <div class="text">Produtos de Cozinha</div>
+                            </div>
+                        </a>  
                     </div>
                     <div class="caixa-produtos">
-                        <a href="paginas/Produtos.html"><span> Confira nossos Produtos</span></a>  
+                        <a href="produtos.html"><button type="button" class="btn btn-block btn-outline-info">Confira nossos Produtos</button></a>  
                     </div>
 
                 </div>
-                    <div class="secao3 "><!--col-sm nas tres seções responsive test-->
+                    <div class="secao3">
                         <div class="redesocial">
                             <h2> Redes sociais</h2>
-                            <a href="https://www.facebook.com/aluminiobrilhante.trofa.9" target="_blank"><img src="imagens/facebook_icone.png"></a>
-                            <a href="http://facebook.com"target="_blank"><img src="imagens/Whatsapp_icone.png"></a>
-                            <a href=" http://api.whatsapp.com/send?1=pt_BR&phone=5500000000000" target="_blank"><img src="imagens/instagram_icone.png"></a>
+                            <a href="https://www.facebook.com/aluminiobrilhante.trofa.9" target="_blank"><img class="img-thumbnail btn-info" src="imagens/facebook_icone.png"></a>
+                            <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5500000000000"target="_blank"><img class="img-thumbnail btn-info" src="imagens/Whatsapp_icone.png"></a>
+                            <a href="http://instagram.com/" target="_blank"><img class="img-thumbnail btn-info" src="imagens/instagram_icone.png"></a>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
-            
+
+        <div class="divisao"></div>
+            <section class="container dividirsecoes">
+                    <div class=" container">
+                        <div>
+                          <h3>  Novos Produtos em Breve</h3>
+                        </div>
+                            <div class="dividirsecoes carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-sm"><a href="produtos.html" ><img class="d-block w-100" alt="Responsive image" src="imagens/Fotos Brilhante/013.jpg" alt="1 slide"></a></div>
+                                            <div class="col-sm"><a href="produtos.html" ><img class="d-block w-100" alt="Responsive image" src="imagens/Fotos Brilhante/023.jpg" alt="2 slide"></a></div>
+                                            <div class="col-sm"><a href="produtos.html" ><img class="d-block w-100"  alt="Responsive image" src="imagens/Fotos Brilhante/021.jpg" alt="3 slide"></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-sm"><a href="produtos.html" ><img class="d-block w-100" src="imagens/Fotos Brilhante/054.jpg" alt="4 slide"></a></div>
+                                            <div class="col-sm"><a href="produtos.html" ><img class="d-block w-100" src="imagens/Fotos Brilhante/040.jpg" alt="5 slide"></a></div>
+                                            <div class="col-sm"><a href="produtos.html" ><img class="d-block w-100" src="imagens/Fotos Brilhante/019.jpg" alt="6 slide"></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+            </section>
+
+            <div class="divisao"></div>
         
 
         
@@ -102,9 +142,9 @@
                         <img src="imagens/Aluminio-Brilhante.png">
                         <div class="menu-final">
                             <i class="fas fa-tty"></i>
-                            <div>
+                            <div class="atendimento">
                             <p>Atendimento</p>
-                            <a href="">(11)-99999-99999</a>
+                            <a href="">(11)-2292-3540</a>
                             <p>Segunda a sexta das 08h às 18h!</p>
                             </div>
                         </div>
@@ -121,9 +161,8 @@
                     </div>
 
                     <div class="coluna-loja">
-                        <h3>Nossa Loja Online</h3>
+                        <h3>Loja Online</h3>
                         <h4>Em Breve</h4>
-                        <img src="/imagens/Aluminio1.jpg" alt="alumi">
                     </div>
 
 

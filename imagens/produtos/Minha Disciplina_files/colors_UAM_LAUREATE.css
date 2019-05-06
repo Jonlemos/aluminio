@@ -1,0 +1,125 @@
+.wrapper{
+  background: #00ad8e !important;
+}
+
+.navigationSect2 .titleUnit,
+.navigationSect3 .titleUnit {
+  background: #00ad8e !important;
+}
+
+#notification .title {
+  background-color: #00ad8e !important;
+}
+
+#notification .older {
+  background-color: #00ad8e !important;
+}
+
+.navigationSect1 .onclick,
+.navigationSect2,
+.navigationSect3{
+  background-color: rgba(0,173,142,0.5);
+}
+
+.navigationSect3 span.bottomDesc {
+  background: rgba(0,173,142,1) !important;
+}
+
+.navigationSect2 {
+  border: 2px solid #00ad8e !important;
+}
+
+.dataAtiv {
+  color: #00ad8e !important;
+}
+
+#notification .item .icone {
+  color: #00ad8e !important;
+}
+
+.refText{
+  background: #00ad86 !important;
+}
+
+.onclick .refTextWhite{
+  color: rgba(0,173,142,1) !important;
+}
+
+
+#menu_container ul li:active a{
+  background: #00ad86 !important;
+  color: #fff;
+}
+
+#menu_container ul li a:visited, #menu_container ul li a:focus{
+  color: #00ad86 !important;
+}
+
+#menu_container ul li:hover a{
+  background-color: #00ad86 !important;
+  color: #fff !important;
+}
+
+#menu_container ul li a {
+  color: #00ad86 !important;
+}
+
+.annoucesBoxFooter{
+  background: #00ad86 !important;
+}
+
+.navigationSect2{
+  border: 2px solid #00C196 !important;
+}
+
+#wrapper{
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(170, 255, 169, 0.5)), to(rgba(17, 255, 189, 0.5))), url(/branding/themes/LATE_DEV/images/bblearn/header.jpeg) !important;
+  background-image: -webkit-linear-gradient(left, rgba(170, 255, 169, 0.5), rgba(17, 255, 189, 0.5)), url(/branding/themes/LATE_DEV/images/bblearn/header.jpeg) !important;
+  background-image: -o-linear-gradient(left, rgba(170, 255, 169, 0.5), rgba(17, 255, 189, 0.5)), url(/branding/themes/LATE_DEV/images/bblearn/header.jpeg) !important;
+  background-image: linear-gradient(to right, rgba(170, 255, 169, 0.5), rgba(17, 255, 189, 0.5)), url(/branding/themes/LATE_DEV/images/bblearn/header.jpeg) !important;
+}
+
+.icone_menu{
+  width: 26px !important;
+  height: 25px !important;
+  background-image: url('/branding/themes/LATE_DEV/images/bblearn/icones_ies_menu.png') !important;
+  background-size: 200px auto !important;
+  margin-right: 5px !important;
+}
+
+#menu_container ul li a .icone_menu{
+  background-position: -22px -62px !important;
+}
+
+#menu_container ul li a.active .icone_menu{
+  background-position: -22px 71px !important;
+}
+
+#menu_container ul li a:hover .icone_menu{
+  background-position: -22px -19px !important;
+}
+
+#imgLogo{
+  background-image: url(/branding/themes/LATE_DEV/images/bblearn/logos/uam_online.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  height: 70% !important;
+  width: 50% !important;
+  display: flex !important;
+  float: left !important;
+  align-items: center !important;
+}
+
+.icone_menu {
+  width: 35px !important;
+  height: 35px !important;
+  margin-right: 5px !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background: url(/branding/themes/LATE_DEV/images/bblearn/icones_ies_menu.png) !important;
+  background-position: 68% 126% !important;
+}
+
+.menuItem:hover .icone_menu{
+  background-position: 78% 126% !important;
+}

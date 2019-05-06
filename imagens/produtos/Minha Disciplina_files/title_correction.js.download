@@ -1,0 +1,55 @@
+/*SCRIPT PARA CORREÃ‡ÃƒO DOS TITLES NA COURSE
+
+// version: 1.1
+// last modified: 29.03.2019 by Igor Ponso
+// author: Igor Ponso
+// email: igor.ponso@laureatedigital.net
+
+
+DEPENDENDO DA QUANTIDADE DE ITENS DENTRO DE CADA UNIDADE, UMA TRATATIVA DIFERENTE Ã‰ FEITA
+MODIFICANDO A ALTURA OU/E POSIÃ‡ÃƒO DOS CHILDELEMENTS
+*/
+function callTitleCorrection(){
+	var sect1 = document.getElementById('section1');
+	var sect2 = document.getElementById('section2');
+	var sect3 = document.getElementById('section3');	
+	var titleUnit = document.getElementsByClassName('titleUnit');
+	var discDescription = document.getElementsByClassName('discDescription');
+	var bottomDesc = document.getElementsByClassName('bottomDesc');
+	var refText = document.getElementsByClassName('refTextWhite');
+	var itemAviso = document.getElementsByClassName('item');
+	 
+
+	for(var i = 0; i < sect1.getElementsByClassName('navigationSect1').length; i++){
+		sect1.getElementsByClassName('navigationSect1')[i].setAttribute("title", sect1.getElementsByClassName('navigationSect1')[i].innerText);
+	}
+
+	for(var i = 0; i < sect2.getElementsByClassName('titleUnit').length; i++){
+		sect2.getElementsByClassName('navigationSect2')[i].setAttribute("title", sect2.getElementsByClassName('titleUnit')[i].value);
+	}
+
+	for(var i = 0; i < sect3.getElementsByClassName('unit').length; i++){
+		sect3.getElementsByClassName('navigationSect3')[i].setAttribute("title", sect3.getElementsByClassName('unit')[i].innerText);
+	}
+
+
+	for(var i=0; i<titleUnit.length;i++){
+	    titleUnit[i].setAttribute("title",titleUnit[i].value);
+	}
+	 
+	for(var i=0; i<discDescription.length;i++){
+	    discDescription[i].setAttribute("title",discDescription[i].innerText);
+	}
+	 
+	for(var i=0; i<bottomDesc.length;i++){
+	    bottomDesc[i].setAttribute("title",bottomDesc[i].innerText);
+	}
+	 
+	for(var i=0; i<refText.length;i++){
+	    refText[i].setAttribute("title",refText[i].innerText);
+	}
+	 
+	for(var i=0; i<itemAviso.length;i++){
+	    itemAviso[i].setAttribute("title",itemAviso[i].getElementsByClassName('voidBtn')[0].value);
+	}
+}

@@ -1,0 +1,53 @@
+/*SCRIPT PARA CORREÃ‡ÃƒO DO DIMENSIONAMENTO DAS SECTIONs NA COURSE
+
+// version: 1.1
+// last modified: 29.03.2019 by Igor Ponso
+// author: Igor Ponso
+// email: igor.ponso@laureatedigital.net
+
+
+DEPENDENDO DA QUANTIDADE DE ITENS DENTRO DE CADA UNIDADE, UMA TRATATIVA DIFERENTE Ã‰ FEITA
+MODIFICANDO A ALTURA OU/E POSIÃ‡ÃƒO DOS CHILDELEMENTS
+*/
+
+
+function callUnitCorrection(){
+
+	var unitsCount = document.getElementsByClassName('navigationSect2').length;
+
+	console.log("Activating units_correction");
+	for(i=0; i<unitsCount; i++){
+		if(document.getElementsByClassName('navigationSect2')[i].childElementCount === 2) {
+			if(window.innerWidth >= 1024){
+				document.getElementsByClassName('navigationSect2')[i].firstElementChild.style.height = "87%";
+			}
+			else{
+				document.getElementsByClassName('navigationSect2')[i].firstElementChild.style.height = "75%";
+			}
+		}else if(document.getElementsByClassName('navigationSect2')[i].childElementCount === 1){
+			document.getElementsByClassName('navigationSect2')[i].firstElementChild.style.height = "100%";
+			document.getElementsByClassName('navigationSect2')[i].firstElementChild.firstElementChild.style.height = "50%";
+			if(document.getElementsByClassName('navigationSect2')[i].firstElementChild.firstElementChild.childElementCount === 3){
+				document.getElementsByClassName('navigationSect2')[i].firstElementChild.firstElementChild.style.bottom = "unset";
+				document.getElementsByClassName('navigationSect2')[i].firstElementChild.firstElementChild.style.top = "0";
+			}else{
+				document.getElementsByClassName('navigationSect2')[i].firstElementChild.firstElementChild.style.top = "unset";
+				document.getElementsByClassName('navigationSect2')[i].firstElementChild.firstElementChild.style.bottom = "0"
+			}
+		}
+		if(document.getElementsByClassName('navigationSect2')[i].firstElementChild.firstElementChild.childElementCount === 1){
+			document.getElementsByClassName('navigationSect2')[i].firstElementChild.firstElementChild.style.height = "100%"
+		}
+
+if(unitsCount > 4){
+for(i=0;i<unitsCount;i++){
+document.getElementsByClassName('navigationSect2')[i].lastElementChild.style.height = "20%"
+document.getElementsByClassName('navigationSect2')[i].firstElementChild.style.height = "80%"
+document.getElementsByClassName('navigationSect2')[i].firstElementChild.firstElementChild.style.height = "50%"
+}
+	}
+}
+
+
+	callTitleCorrection();
+}

@@ -18,7 +18,7 @@ $(document).ready(function () {
                     '                  ',
                     button: {
                         text: 'Veja Mais Produtos Aqui',
-                        url: 'https://github.com/iamwizzdom/slideWiz',
+                        url: 'produtos.html',
                         class: 'btn btn-medium btn-primary',
                         color: '#3781ce'
                     }
@@ -28,12 +28,12 @@ $(document).ready(function () {
                         main: "imagens/imagem_menu2.jpg",
                         cover: "imagens/imagem_menu2.jpg"
                     },
-                    title: 'Veja Mais Produtos Aqui',
-                    desc: 'slideWiz is a JQuery based library created by a Nigerian by the name\n' +
-                    '                    \'Wisdom Emenike\' who currently works at Imaxinacion Tech, one of Nigeria\'s leading IT companies.',
+                    title: 'Bule',
+                    desc: 'Ideal para o dia a dia, com variados tamanhos'+
+                    '                  ',
                     button: {
                         text: 'Veja Mais Produtos Aqui',
-                        url: 'https://github.com/iamwizzdom/slideWiz',
+                        url: 'produtos.html',
                         class: 'btn btn-medium btn-primary',
                         color: '#3781ce'
                     }
@@ -43,12 +43,12 @@ $(document).ready(function () {
                         main: "imagens/imagem_menu6.jpg",
                         cover: "imagens/imagem_menu6.jpg"
                     },
-                    title: 'slideWiz Library',
-                    desc: 'slideWiz is a JQuery based library created by a Nigerian by the name\n' +
-                    '                    \'Wisdom Emenike\' who currently works at Imaxinacion Tech, one of Nigeria\'s leading IT companies.',
+                    title: 'Pipoqueira',
+                    desc: 'Linha Hotel, perfeito para cozinha industrial'+
+                    '                  ',
                     button: {
                         text: 'Veja Mais Produtos Aqui',
-                        url: 'https://github.com/iamwizzdom/slideWiz',
+                        url: 'produtos.html',
                         class: 'btn btn-medium btn-primary',
                         color: '#3781ce'
                     }
@@ -58,12 +58,12 @@ $(document).ready(function () {
                         main: "imagens/imagem_menu4.jpg",
                         cover: "imagens/imagem_menu4.jpg"
                     },
-                    title: 'slideWiz Library',
-                    desc: 'slideWiz is a JQuery based library created by a Nigerian by the name\n' +
-                    '                    \'Wisdom Emenike\' who currently works at Imaxinacion Tech, one of Nigeria\'s leading IT companies.',
+                    title: 'Caldeirão Reto',
+                    desc: 'Linha Hotel, perfeito para cozinha industrial' +
+                    '                    ',
                     button: {
                         text: 'Veja Mais Produtos Aqui',
-                        url: false,
+                        url: 'produtos.html',
                         class: 'btn btn-medium btn-primary',
                         color: '#3781ce'
                     }
