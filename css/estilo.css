@@ -4,7 +4,7 @@
 }
 body{
   margin: 0px;
-  background-color: #f0c4b6
+  background-color: #6e7376;
 }
 .logo {
   display: block;
@@ -23,9 +23,7 @@ body{
 .contato {
   display: flex;
   justify-content: space-between;
-  width: 960px;
-  height: 55px;
-  margin:0 auto;
+  
 }
 
 .contato p {
@@ -47,14 +45,21 @@ body{
 }
 
 .container {
-  width: 960px;
+  width: 90%;
   margin:0 auto;
   padding: 0;
+}
+
+.colormargin {
+  background-color: #f0c4b6
 }
 
 .logo img {
   height: 85px;
   margin: 0 auto;
+}
+.produtos-align {
+  padding: 0 25px;
 }
 
 .menu{
@@ -123,8 +128,10 @@ menu p {
 
 .slider-produtos {
   display: flex;
-  margin-top: -95px;
-  justify-content: space-between;
+  margin-top: -165px;
+  justify-content: space-around;
+  padding-top: 55px;
+  
 }
 
 .dividirsecao {
@@ -186,6 +193,7 @@ menu p {
   white-space: nowrap; 
   color: rgb(4, 41, 9);
   font-size: 20px;
+  font-weight: 700;
   position: absolute;
   overflow: hidden;
   top: 50%;
@@ -235,7 +243,6 @@ menu p {
   margin-top: 45px;
 }
 .divisao {
-  margin-top: 20px;
   height: 2px;
   background-color:#7c9c37
 }
@@ -249,7 +256,7 @@ menu p {
 .rodape {
 
   background-color: #b8d2fd;
-  min-height: 300px;
+  min-height: 250px;
 }
 
 .menu-final {
@@ -298,6 +305,7 @@ padding-top: 25px;
 .formulario {
   width: 770px;
   margin-bottom: 60px;
+  margin-left: 25px;
 
 }
 
