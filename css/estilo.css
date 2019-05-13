@@ -375,6 +375,37 @@ textarea.campo {
 
 
   }
+  .slider-produtos {
+    display: block;
+    
+  }
+  .secao1 {
+    margin-bottom: 20px;
+    padding-left: 30%
+  }
+
+  .dividirsecao {
+    padding-left: 20%
+
+  }
+
+  .redesocial h2 {
+    text-align: center;
+    padding-top: 15px;
+    
+  }
+  .links-redesociais {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .links-redesociais a {
+    margin: 0px 20px;
+  }
+  .campo {
+    width: 80%
+  }
 
 
 }
