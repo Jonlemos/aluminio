@@ -304,7 +304,7 @@ padding-top: 25px;
 
 .formulario {
   width: 770px;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
   margin-left: 25px;
 
 }
@@ -353,10 +353,17 @@ textarea.campo {
 .nav-produtos {
   margin-bottom: 35px;
 }
-
-.card-link {
-  padding-bottom: 0%
+.card{
+  border-radius: 15px;
+  position: relative;
 }
+.card-link{
+  position: absolute;
+  bottom: 2%
+}
+
+
+
 
 
 
