@@ -1,5 +1,7 @@
 /* não pading com altura e largura*/
 *{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 body{
@@ -34,7 +36,14 @@ body{
   margin: 15px auto;
   
   }
+.container {
+  width: 90%;
+  margin:0 auto;
+  padding: 0;
 
+  background-color: #f0c4b6
+  
+}
 .intro {
     
   background-image: url(../imagens/menu_aluminio.jpg);
@@ -42,16 +51,6 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 100;
-}
-
-.container {
-  width: 90%;
-  margin:0 auto;
-  padding: 0;
-}
-
-.colormargin {
-  background-color: #f0c4b6
 }
 
 .logo img {
@@ -152,7 +151,7 @@ menu p {
   background-color: rgb(0, 140, 186, 0.6);
   overflow: hidden;
   width: 100%;
-  height: 0;
+  height: 70px;
   transition: .5s ease;
 }
 .overlay2 {  
@@ -163,7 +162,7 @@ menu p {
   background-color: rgb(0, 140, 186, 0.6 );
   overflow: hidden;
   width: 100%;
-  height: 0;
+  height: 70px;
   transition: .5s ease;
   margin-bottom: 15px;
 }
@@ -223,28 +222,44 @@ menu p {
   font-size: 25px;
 }
 
-.secao3
-{
-  height: 100%;
+
+.contato-aside h2{
+  text-align: center;
+  background-color: rgb(0, 140, 186);
   
 }
-.redesocial {
-  display: block;
+
+.contato-aside {
+  height: 445px;
+  
+  background-color: rgb(98, 124, 139, 0.3);
+  border-radius: 0 0 15px 15px;
+
+}
+.endereco-aside{
+  display: flex;
   
 }
-.redesocial h2{
-  margin: 0;
+.contato-aside img {
+  height: 50px;
 }
-.redesocial img {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  height: 85px;
-  margin-top: 45px;
+.secao-aside {
+  padding-top: 25px;
+  padding: 25px 25px  10px 20px;
 }
+.links-redesociais i {
+  padding: 0px 20px;
+  text-align: center;
+  font-size: 45px;
+  color: #000
+}
+
 .divisao {
   height: 2px;
   background-color:#7c9c37
+}
+.secao-aside i {
+  padding-top: 5px;
 }
 
 .dividirsecoes{
@@ -267,6 +282,7 @@ padding-top: 25px;
 
 .coluna-contato {
   width: 33%;
+  margin-left: 30px;
 }
 
 .coluna-contato img {
@@ -368,10 +384,10 @@ textarea.campo {
 
 
 
-@media (max-width:959px){
+@media (max-width:1139px){
 
   .container{
-    width: 768px;
+    width: 95%;
 
 
   }
@@ -389,31 +405,183 @@ textarea.campo {
 
   }
 
-  .redesocial h2 {
+  .contato-aside h2 {
     text-align: center;
     padding-top: 15px;
     
   }
   .links-redesociais {
     display: flex;
-    justify-content: center;
-
-  }
-
-  .links-redesociais a {
-    margin: 0px 20px;
+    
+    
   }
   .campo {
     width: 80%
   }
 
+  .secao1 .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 217px;
+    right: 0px;
+    background-color: rgb(0, 140, 186, 0.6);
+    overflow: hidden;
+    width: 295px;
+    height: 70px;
+    transition: .5s ease;
+  }
+  .overlay2 {
+    position: absolute;
+    bottom: 0;
+    left: 144px;
+    right: 0;
+    background-color: rgb(0, 140, 186, 0.6 );
+    overflow: hidden;
+    width: 434px;
+    height: 70px;
+    transition: .5s ease;
+    margin-bottom: 15px;
+  }
+  .secao3{
+    margin-top: 20px;
+  }
+  .secao-aside {
+    
+    padding: 15px 7px 10px 5px;
+  }
+  .menu li {
+    margin-left: 0;
+    padding-left: 0 ;
+    padding-top: 10px;
+
+  }
+  .secao3{
+    padding-bottom: 15px;
+  }
+  
+
+}
+
+@media (max-width:1024px){
+  .overlay2 {
+    position: absolute;
+    bottom: 0;
+    left: 193px;
+  }
+  .secao1 .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 290px;
+  }
 
 }
 
 
 @media (max-width:767px) {
   .container {
-    width: 319px;
+    width: 95%
+  }
+  .dividirsecao {
+    padding-left: 10%;
+  }
+  .secao1 {
+    margin-bottom: 20px;
+    padding-left: 25%;
   }
 
+  .secao1 .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 152px;
+    right: 0px;
+    background-color: rgb(0, 140, 186, 0.6);
+    overflow: hidden;
+    width: 265px;
+    height: 70px;
+    transition: .5s ease;
+  }
+  .overlay2 {
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+    right: 0;
+    background-color: rgb(0, 140, 186, 0.6 );
+    overflow: hidden;
+    width: 400px;
+    height: 70px;
+    transition: .5s ease;
+    margin-bottom: 15px;
+  }
+
+}
+
+@media (max-width:420px){
+  
+  .container {
+    width: 95%;
+  }
+  
+  
+  .secao1 {
+    margin-bottom: 20px;
+    padding-left: 18%;
+  }
+  .secao1 img {
+    height: 376px;
+}
+
+.secao1 .overlay{
+  position: absolute;
+  left: 65px;
+  width: 250px;
+}
+.secao2 img {
+  height: 206px;
+}
+.overlay2 {
+  position: absolute;
+  left: 36px;
+  background-color: rgb(0, 140, 186, 0.6 );
+  overflow: hidden;
+  width: 309px;
+}
+.caixa-produtos span {
+  display: none;
+}
+
+.sobrep span{
+  display: none;
+}
+
+.menu-final{
+  display: block;
+  justify-content: center
+}
+.coluna-sobre {
+width: 100%;
+margin-left: 30px;
+  }
+
+  .coluna-loja{
+    margin-left: 30px;
+  }
+}
+
+
+@media (max-width:320px){
+  .secao2 img {
+    height: 170px;
+}
+
+.overlay2{
+  width: 245px;
+}
+.secao1 img {
+  height: 300px;
+}
+.secao1 .overlay {
+  position: absolute;
+  left: 30px;
+  width: 252px;
+}
 }
